@@ -1,0 +1,25 @@
+<h2>Add New Car Listing</h2>
+
+<form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+  <label>Title:
+    <input type="text" formControlName="title" />
+  </label>
+
+  <label>Description:
+    <textarea formControlName="description"></textarea>
+  </label>
+
+  <label>Make:
+    <input type="text" formControlName="make" />
+  </label>
+
+  <label>Model:
+    <input type="text" formControlName="model" />
+  </label>
+
+  <label>Year:
+    <input type="number" formControlName="year" />
+  </label>
+
+  <button type="submit" [disabled]="!carForm.valid">Create Listing</button>
+</form>

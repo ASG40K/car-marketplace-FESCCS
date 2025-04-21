@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss - global SCSS file */
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-stack: 'Segoe UI', sans-serif;
+
+a {
+  cursor: pointer;
+  color: blue;
+}
+
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}

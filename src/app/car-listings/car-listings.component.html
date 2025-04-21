@@ -1,10 +1,10 @@
 <h2>Car Listings</h2>
 
 <ul>
-  <li *ngFor="let car of listings">
-    <h3>{{ car.title }} ({{ car.year }})</h3>
-    <p><strong>Make:</strong> {{ car.make }}</p>
-    <p><strong>Model:</strong> {{ car.model }}</p>
-    <p><strong>Description:</strong> {{ car.description }}</p>
+  <li *ngFor="let car of listings" class="car-card">
+    <h3 class="car-title">{{ car.title }} ({{ car.year }})</h3>
+    <p class="car-meta"><strong>Make:</strong> {{ car.make }}</p>
+    <p class="car-meta"><strong>Model:</strong> {{ car.model }}</p>
+    <p class="car-meta"><strong>Description:</strong> {{ car.description }}</p>
   </li>
 </ul>
